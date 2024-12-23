@@ -1,0 +1,94 @@
+.add-blog {
+    box-sizing: border-box;
+    width: 1080px; /* Set to 80% of the viewport width */
+    max-width: 1000px; /* Set a max-width to keep it within bounds on large screens */
+    padding: 30px 50px;
+    margin: 20px auto; /* Centered horizontally */
+    border-radius: 6px;
+    background: white;
+}
+
+/* Flex container for each row */
+.add-blog-itemfield {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px; /* Add spacing between rows */
+}
+
+/* Fixed width for labels to align all inputs */
+.add-blog-itemfield p {
+    width: 180px; /* Increased width for label alignment */
+    font-size: 16px;
+    font-weight: 500;
+    color: #7b7b7b;
+    margin: 0; /* Remove default margin */
+}
+
+/* Input and textarea fields aligned */
+.add-blog-itemfield input,
+.add-blog-itemfield textarea,
+.add-blog-itemfield select {
+    flex: 1; /* Take up remaining space */
+    padding-left: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    color: #7b7b7b;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #c3c3c3;
+}
+
+/* Specific styling for textarea */
+.add-blog-itemfield textarea {
+    height: 100px; /* Adjusted height for textarea */
+    resize: vertical; /* Allow resizing in the vertical direction only */
+}
+
+/* Selectors and buttons */
+.add-blog-selector,
+.add-blog-btn {
+    width: 100px;
+    padding: 10px;
+    color: #7b7b7b;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Thumbnail image styling */
+.addblog-thumbnail-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    object-fit: contain;
+    margin: 10px 0px;
+}
+
+/* Button styling */
+.add-blog-btn {
+    margin-top: 20px;
+    background: #6079ff;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 800px) {
+    .add-blog {
+        width: auto;
+        padding: 20px;
+        margin: 20px;
+    }
+    .add-blog-itemfield {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .add-blog-itemfield p {
+        width: auto;
+        margin-bottom: 5px;
+    }
+}
