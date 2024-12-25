@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "freelance1-153c8"
+  },
+  "targets": {
+    "freelance1-153c8": {
+      "hosting": {
+        "admin-panel": [
+          "admin-panel-336b9"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
